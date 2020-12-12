@@ -15,5 +15,9 @@ jobs:
         key_file: id_ecdsa
     - uses: actions/checkout@v2
     - run: source ubuntu-run.sh
+    - name: initialization
+      run: |
+           git config --global user.name "ElytrA8"
+           git config --global user.email "manofuranium@gmail.com"             
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@master
